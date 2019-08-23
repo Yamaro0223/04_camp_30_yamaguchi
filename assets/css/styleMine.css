@@ -1,0 +1,17 @@
+/* Mypage設定 */
+.mesBox {
+    width: 100%;
+    height: 500px;
+    border: 1px solid;
+}
+
+.supBox {
+    width: 100%;
+    height: 20px;
+    border: 1px solid;
+    display: flex;
+}
+
+textarea#supMes {
+    width: 95%;
+}

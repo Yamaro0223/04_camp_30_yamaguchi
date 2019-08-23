@@ -6,6 +6,8 @@ if (!isset($_SESSION["NAME"])) {
     header("Location: login/login.php");
     exit;
 }
+
+// include 'insert.php';
 ?>
 
 <!doctype html>
@@ -55,6 +57,7 @@ if (!isset($_SESSION["NAME"])) {
     <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styleMine.css">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
   </head>
 
@@ -152,6 +155,15 @@ if (!isset($_SESSION["NAME"])) {
                 <h1>部活サポートの申し込み</h1>
                 <p>カレンダーを用いた部活サポートの申し込みができます。</p>
                 <p>カレンダーの空き部分に記載をすると、Wactメンバーから直接あなたへ連絡が入ります。</p>
+                <div class="mesBox">
+
+                </div>
+                <div class="sptForm">
+                  <form action="" class="supBox">
+                    <textarea name="message" name="supMes" id="supMes" cols="3" rows="1"></textarea>
+                    <button type="submit" name="send" value="送信"></button>
+                  </form>
+                </div>
             </div>
             <div class="row multi-columns-row">
                 部活サポートの申し込みフォームが入ります。
